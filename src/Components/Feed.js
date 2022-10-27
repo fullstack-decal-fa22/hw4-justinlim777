@@ -6,9 +6,10 @@ import Block from './Block';
 const Feed = () => {
     /* TODO: Declare a new state variable to keep track of the blocks on your Blockstagram feed! */
     // Refer to Hint 2 for more help!
+    const [block, setBlock] = useState([]);
 
     /* Use the map() function to render multiple Blocks! */
-    const posts = null; // TODO: edit this variable
+    const posts = block.map((item) => (<li> (item) </li>)); // TODO: edit this variable
 
     return (
         <div>
